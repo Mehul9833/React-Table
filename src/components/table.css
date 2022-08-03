@@ -1,0 +1,46 @@
+table {
+	font-family: Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+table td,
+table th {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+table tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+table tr:hover {
+	background-color: #ddd;
+}
+
+table th,
+tfoot td {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: center;
+	background-color: #04aa6d;
+	color: white;
+}
+
+.resizer {
+	display: inline-block;
+	background: black;
+	width: 3px;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transform: translateX(50%);
+	z-index: 1;
+	touch-action: none;
+}
+
+.resizer,
+.isResizing {
+	background: red;
+}
